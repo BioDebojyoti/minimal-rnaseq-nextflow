@@ -1,4 +1,6 @@
 process SALMON_INDEX {
+  conda 'envs/salmon.yml'
+  
   tag "Salmon index"
 
   publishDir "${params.outdir}/reference/salmon", mode: 'copy'

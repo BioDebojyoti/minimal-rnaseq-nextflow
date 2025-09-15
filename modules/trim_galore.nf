@@ -1,4 +1,6 @@
 process TRIMGALORE {
+  conda 'envs/trim_galore.yml'
+  
   tag { sample_id }
   publishDir "${params.outdir}/trimmed", mode: 'copy'
 

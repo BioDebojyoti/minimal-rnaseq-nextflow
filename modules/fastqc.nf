@@ -1,4 +1,6 @@
 process FASTQC {
+  conda 'envs/fastqc.yml'
+  
   tag { sample_id }
   publishDir "${params.outdir}/fastqc", mode: 'copy'
 

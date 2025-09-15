@@ -1,4 +1,6 @@
 process MULTIQC {
+  conda 'envs/multiqc.yml'
+  
   publishDir "${params.outdir}/multiqc", mode: 'copy'
 
   input:

@@ -1,9 +1,10 @@
 process DESEQ2 {
+  conda 'envs/deseq2.yml'
+  
   publishDir "${params.outdir}/deseq2", mode: 'copy'
 
   input:
-    path(count_matrix)
-    path(design)
+    tuple path(count_matrix), path(design)
 
   output:
     path("deseq2_results.tsv")

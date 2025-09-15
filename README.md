@@ -52,22 +52,23 @@ The pipeline is designed to run in **GitHub Codespaces** or any Linux environmen
 Tab-delimited table with sample IDs and FASTQ paths:
 
 
-sample_id&emsp;fastq_1&emsp;fastq_2  
-
-sampleA&emsp;data/sampleA_R1.fastq.gz&emsp;data/sampleA_R2.fastq.gz 
-
-sampleB&emsp;data/sampleB_R1.fastq.gz&emsp;data/sampleB_R2.fastq.gz
+|sample_id&emsp;|&emsp;fastq_1&emsp;|&emsp;fastq_2|  
+|---------------|-------------------|-------------|
+|sampleA&emsp;|&emsp;data/sampleA_R1.fastq.gz&emsp;|&emsp;data/sampleA_R2.fastq.gz| 
+|sampleB&emsp;|&emsp;data/sampleB_R1.fastq.gz&emsp;|&emsp;data/sampleB_R2.fastq.gz|
 
 
 ### 2. `design.tsv` (required for DESeq2)
 
 Tab-delimited table specifying sample conditions:
 
-sample_id&emsp;condition 
+|&emsp; sample_id &emsp; | &emsp; condition &emsp;|  
 
-sampleA&emsp;control 
+|--------------&emsp; | &emsp;-------------| 
 
-sampleB&emsp;treatment
+|&emsp; sampleA &emsp;  &emsp;|&emsp; &emsp;control &emsp;| 
+
+| &emsp; sampleB&emsp; &emsp;| &emsp;treatment &emsp;|
 
 
 - `sample_id` must match `samples.tsv`.

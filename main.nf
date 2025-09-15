@@ -13,10 +13,10 @@ samples_ch = Channel.fromPath(params.samples)
 // include modules
 include { FASTQC }        from './modules/fastqc'
 include { TRIMGALORE }    from './modules/trim_galore'
-include { SALMON_INDEX } from './modules/salmon_index'
+include { SALMON_INDEX }  from './modules/salmon_index'
 include { SALMON_QUANT }  from './modules/salmon'
 include { MULTIQC }       from './modules/multiqc'
-include { STAR_INDEX } from './modules/star_index'
+include { STAR_INDEX }    from './modules/star_index'
 include { STAR_ALIGN }    from './modules/star'
 include { FEATURECOUNTS } from './modules/featurecounts'
 include { MERGE_COUNTS }  from './modules/merge_counts'

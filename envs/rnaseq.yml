@@ -4,14 +4,18 @@ channels:
   - bioconda
   - defaults
 dependencies:
-  - fastqc
-  - trim-galore
-  - cutadapt
-  - salmon
-  - multiqc
-  - star
-  - subread
+  - bioconda::fastqc=0.12.1
+  - bioconda::cutadapt=4.9
+  - bioconda::trim-galore=0.6.10
+  - conda-forge::pigz=2.8
+  - bioconda::salmon=1.10.3
+  - bioconda::multiqc=1.31
+  - bioconda::htslib=1.21
+  - bioconda::samtools=1.21
+  - bioconda::star=2.7.11b
+  - conda-forge::gawk=5.1.0
+  - bioconda::bioconductor-deseq2=1.34.0
+  - bioconda::subread=2.0.6
   - r-base
-  - bioconductor-deseq2
   - bioconductor-pheatmap
   - r-ggplot2  

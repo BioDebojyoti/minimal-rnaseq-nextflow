@@ -1,4 +1,6 @@
 process FEATURECOUNTS {
+  conda 'envs/featurecounts.yml'
+  
   tag { sample_id }
   publishDir "${params.outdir}/counts", mode: 'copy'
 

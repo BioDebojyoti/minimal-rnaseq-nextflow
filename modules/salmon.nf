@@ -1,4 +1,6 @@
 process SALMON_QUANT {
+  conda 'envs/salmon.yml'
+  
   tag { sample_id }
   publishDir "${params.outdir}/salmon", mode: 'copy'
 

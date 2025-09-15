@@ -1,4 +1,6 @@
 process STAR_INDEX {
+  conda 'envs/star.yml'
+
   tag "STAR index"
 
   publishDir "${params.outdir}/reference/star", mode: 'copy'

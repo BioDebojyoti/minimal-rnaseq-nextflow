@@ -161,3 +161,15 @@ results/counts/gene_counts_matrix.txt → merged gene × sample counts
 results/deseq2/deseq2_results.tsv → DESeq2 results table
 
 results/deseq2/deseq2_plots.pdf → MA plot + PCA plot
+
+## Credits
+- Main Author: 
+    - Debojyoti Das ([@BioDebojyoti](https://github.com/BioDebojyoti))    
+
+## Citation
+
+
+
+## License(s)
+
+[GNU GENERAL PUBLIC LICENSE Version 3](https://github.com/JD2112/TwistMethylFlow/blob/v1.0.3/LICENSE)

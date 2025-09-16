@@ -56,19 +56,19 @@ Tab-delimited table with sample IDs and FASTQ paths:
 |---------------|-------------------|-------------|
 |sampleA&emsp;|&emsp;data/sampleA_R1.fastq.gz&emsp;|&emsp;data/sampleA_R2.fastq.gz| 
 |sampleB&emsp;|&emsp;data/sampleB_R1.fastq.gz&emsp;|&emsp;data/sampleB_R2.fastq.gz|
-
+|sampleC&emsp;|&emsp;data/sampleC_R1.fastq.gz&emsp;|&emsp;data/sampleC_R2.fastq.gz| 
+|sampleD&emsp;|&emsp;data/sampleD_R1.fastq.gz&emsp;|&emsp;data/sampleD_R2.fastq.gz|
 
 ### 2. `design.tsv` (required for DESeq2)
 
 Tab-delimited table specifying sample conditions:
 
-|&emsp; sample_id &emsp; | &emsp; condition &emsp;|  
-
-|--------------&emsp; | &emsp;-------------| 
-
-|&emsp; sampleA &emsp;  &emsp;|&emsp; &emsp;control &emsp;| 
-
-| &emsp; sampleB&emsp; &emsp;| &emsp;treatment &emsp;|
+|sample_id&emsp;|&emsp;condition|  
+|---------------|-------------------|
+|sampleA&emsp;|&emsp;control| 
+|sampleB&emsp;|&emsp;control|
+|sampleC&emsp;|&emsp;treated| 
+|sampleD&emsp;|&emsp;treated|
 
 
 - `sample_id` must match `samples.tsv`.

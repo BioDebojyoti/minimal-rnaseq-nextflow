@@ -6,4 +6,4 @@ reference
 data
 results
 samples.tsv
-design.tsv
+design.tsv.devcontainer

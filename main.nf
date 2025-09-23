@@ -1,6 +1,45 @@
 #!/usr/bin/env nextflow
 nextflow.enable.dsl=2
 
+def helpmsg() {
+    log.info """
+    =========================================================
+      RNA-Seq Pipeline - Help Message
+    =========================================================
+
+    Usage:
+      nextflow run main.nf [options]
+
+    Options:
+      --samples         Path to the samples sheet (default: samples.tsv)
+      --design          Path to the design sheet (default: design.tsv)
+      --outdir          Output directory (default: results)
+
+      --fasta           Reference FASTA file (default: reference/dummy_reference.fa.gz)
+      --gtf             Reference GTF file (default: reference/dummy_reference.gtf.gz)
+
+      --salmon_index    Pre-built Salmon index (default: auto-generate if null)
+      --star_index      Pre-built STAR index (default: auto-generate if null)
+
+      --aligner         Choose aligner: 'salmon' or 'star' (default: salmon)
+
+    Profiles:
+      -profile conda    Use Conda (micromamba) for software management
+      -profile docker   Use Docker containers (disabled by default)
+
+    Other:
+      --help            Show this help message
+
+    =========================================================
+    """.stripIndent()
+}
+
+if (params.help) {
+    helpmsg()
+    exit 0
+}
+
+
 params.samples = "${params.samples ?: 'samples.tsv'}"
 params.outdir  = "${params.outdir ?: 'results'}"
 params.salmon_index = "${params.salmon_index ?: '/path/to/salmon/index'}"

@@ -111,6 +111,44 @@ or another mounted volume.
 
 # Running the Pipeline
 
+```bash
+ $ nextflow run . --help
+
+ N E X T F L O W   ~  version 25.04.7
+
+Launching `./main.nf` [serene_rutherford] DSL2 - revision: d78efc28ef
+
+
+=========================================================
+  RNA-Seq Pipeline - Help Message
+=========================================================
+
+Usage:
+  nextflow run main.nf [options]
+
+Options:
+  --samples         Path to the samples sheet (default: samples.tsv)
+  --design          Path to the design sheet (default: design.tsv)
+  --outdir          Output directory (default: results)
+
+  --fasta           Reference FASTA file (default: reference/dummy_reference.fa.gz)
+  --gtf             Reference GTF file (default: reference/dummy_reference.gtf.gz)
+
+  --salmon_index    Pre-built Salmon index (default: auto-generate if null)
+  --star_index      Pre-built STAR index (default: auto-generate if null)
+
+  --aligner         Choose aligner: 'salmon' or 'star' (default: salmon)
+
+Profiles:
+  -profile conda    Use Conda (micromamba) for software management
+  -profile docker   Use Docker containers (disabled by default)
+
+Other:
+  --help            Show this help message
+
+=========================================================
+```
+
 1. Using Salmon (alignment-free)
 
 ```bash

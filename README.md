@@ -210,4 +210,4 @@ results/deseq2/deseq2_plots.pdf → MA plot + PCA plot
 
 ## License(s)
 
-[GNU GENERAL PUBLIC LICENSE Version 3](https://github.com/JD2112/TwistMethylFlow/blob/v1.0.3/LICENSE)
+[GNU GENERAL PUBLIC LICENSE Version 3](https://github.com/BioDebojyoti/minimal-rnaseq-nextflow/blob/main/LICENSE)
